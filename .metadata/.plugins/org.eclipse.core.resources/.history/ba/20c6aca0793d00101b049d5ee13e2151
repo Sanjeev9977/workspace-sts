@@ -1,0 +1,22 @@
+package in.ashokit.beans;
+
+public class CraditcardPayment implements IPeyment {
+	
+	
+
+	public CraditcardPayment() {
+		System.out.println("Cradit-card payment:: Constructor ");
+	}
+
+	@Override
+	public boolean payBill(double amt) {
+		// TODO Auto-generated method stub
+		
+		System.out.println("Cradit-card payment processing...");
+		return true;
+	}
+	
+	
+	
+
+}

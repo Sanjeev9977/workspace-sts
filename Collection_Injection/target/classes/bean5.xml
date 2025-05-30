@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    
+    
+    <bean id="debit" class="in.ashok.been5.Student" >
+    
+    <property name="id" value="500"></property>
+    
+    <property name="name" value="sanjeev"></property>
+    
+    <property name="Cource">
+    <list>
+    <value>java</value>
+    <value>C++</value>
+    <value>C Program</value>
+    </list>
+            
+    </property>
+    <property name="hobbies">
+    <set>
+    <value>Cricket</value>
+    <value>Songs</value>
+    </set>
+    
+    </property>
+    
+     <property name="phone">
+     <map>
+     <entry key="Contact" value="9591303974" />
+     <entry key="Whatapp" value="7353000323" />
+     </map>
+     </property>
+    
+    </bean>
+    
+    
+</beans>

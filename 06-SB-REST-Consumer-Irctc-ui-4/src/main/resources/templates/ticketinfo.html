@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Ticket Confirmation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>🎫 Ticket Confirmation</h2>
+        <div class="alert alert-success" role="alert">
+            <h4 class="alert-heading">✅ Ticket Booked Successfully!</h4>
+            <p><strong>Ticket ID:</strong> <span th:text="${ticket.ticketId}"></span></p>
+            <p><strong>Status:</strong> <span th:text="${ticket.ticketStatus}"></span></p>
+            <hr>
+            <a href="/bookticket" class="btn btn-primary">Book Another Ticket</a>
+        </div>
+    </div>
+</body>
+</html>

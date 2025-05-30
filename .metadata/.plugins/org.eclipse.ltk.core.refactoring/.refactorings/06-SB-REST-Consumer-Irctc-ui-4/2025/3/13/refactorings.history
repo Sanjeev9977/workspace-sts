@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;06-SB-REST-Consumer-Irctc-ui-4/src/main/resources/templates/dashboard&apos; to &apos;dashboard.html&apos;" description="Rename resource &apos;dashboard&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/resources/templates/dashboard" name="dashboard.html" stamp="1742711425641" updateReferences="true"/>
+</session>

@@ -1,0 +1,40 @@
+<html>
+	
+
+<head>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+				<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+				<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	
+</head>
+
+<body>
+	<center><p>File Upload And Download</p></center>
+	<div  class="container">
+		<div class="row">
+		<div class="col-4">	
+			<form  th:object="${fileObj}"  th:action="@{/file}"  method="post"  enctype="multipart/form-data">
+				<input type="text" th:field="*{fileName}" class="form-control">
+				<br>
+				<input type="file" class="form-control" name="file">
+				<br>
+				<input type="submit" value="Submit" class="btn  btn-primary">				
+			</form>
+			<button type="button" class="btn btn-primary" value="download" onclick="fileupload()" >download</button>
+		</div>
+		<p th:text="${msg}"></p>
+		</div>
+	</div>
+	<script>
+	    function fileupload() {
+	        let fileName = document.querySelector('input[name="fileName"]').value; // Get file name from input
+	        if (fileName) {
+	            window.location.href = "/download?name=" + encodeURIComponent(fileName);
+	        } else {
+	            alert("Please enter a file name to download.");
+	        }
+	    }
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;06-SB-MVC-H2D-App-3&apos; to &apos;06-SB-MVC-H2DB-App-1&apos;" description="Rename resource &apos;06-SB-MVC-H2D-App-3&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/06-SB-MVC-H2D-App-3" name="06-SB-MVC-H2DB-App-1" stamp="1736469791056" updateReferences="true"/>
+</session>

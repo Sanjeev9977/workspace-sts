@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;06-SB-MVC-FROM-App-3/src/main/resources/templates/register1.html&apos; to &apos;register.html&apos;" description="Rename resource &apos;register1.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/resources/templates/register1.html" name="register.html" stamp="1737942779657" updateReferences="true"/>
+</session>

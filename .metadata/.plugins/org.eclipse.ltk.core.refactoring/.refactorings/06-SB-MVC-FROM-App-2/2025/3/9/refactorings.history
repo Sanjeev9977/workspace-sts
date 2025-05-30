@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move package &apos;in.ashok.idGenrateor&apos; to &apos;06-SB-REST-API-1/src/main/java&apos;&#x0D;&#x0A;- Original project: &apos;06-SB-MVC-FROM-App-2&apos;&#x0D;&#x0A;- Destination element: &apos;06-SB-REST-API-1/src/main/java&apos;&#x0D;&#x0A;- Original element: &apos;06-SB-MVC-FROM-App-2/src/main/java/in.ashok.idGenrateor&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move package" destination="=06-SB-REST-API-1/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;in.ashok.idGenrateor" flags="589830" fragments="1" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.movePackages" stamp="1740833841771" version="1.0"/>
+</session>

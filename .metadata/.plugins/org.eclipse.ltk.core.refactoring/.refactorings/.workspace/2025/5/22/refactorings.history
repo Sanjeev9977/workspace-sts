@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;01-JPA_Mltiple_Con_DB_App-8&apos; to &apos;01-File_Upload_Download_App-8&apos;" description="Rename resource &apos;01-JPA_Mltiple_Con_DB_App-8&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/01-JPA_Mltiple_Con_DB_App-8" name="01-File_Upload_Download_App-8" stamp="1748161603418" updateReferences="true"/>
+</session>

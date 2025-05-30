@@ -1,0 +1,5 @@
+package in.ashok.rest;
+
+public class DemoRestController {
+
+}

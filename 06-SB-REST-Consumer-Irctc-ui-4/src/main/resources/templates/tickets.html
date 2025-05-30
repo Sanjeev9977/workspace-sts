@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>All Tickets</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>All Tickets</h1>
+    
+    <!-- Check if there are tickets -->
+    <div th:if="${#lists.isEmpty(tickets)}">
+        <p>No tickets found.</p>
+    </div>
+    
+    <div th:unless="${#lists.isEmpty(tickets)}">
+        <table>
+            <thead>
+                <tr>
+                    <th>Ticket ID</th>
+                    <th>Status</th>
+                    <th>Train Number</th>
+                    <th>Name</th>
+                    <th>Date of Birth</th>
+                    <th>Gender</th>
+                    <th>Date of Journey</th>
+                    <th>From</th>
+                    <th>To</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Loop through each ticket and display its details -->
+                <tr th:each="ticket : ${tickets}">
+                    <td th:text="${ticket.ticketId}"></td>
+                    <td th:text="${ticket.ticketStatus}"></td>
+                    <td th:text="${ticket.trainNum}"></td>
+                    <td th:text="${ticket.name}"></td>
+                    <td th:text="${ticket.dob}"></td>
+                    <td th:text="${ticket.gender}"></td>
+                    <td th:text="${ticket.doj}"></td>
+                    <td th:text="${ticket.from}"></td>
+                    <td th:text="${ticket.to}"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

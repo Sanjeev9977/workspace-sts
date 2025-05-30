@@ -1,0 +1,5 @@
+package in.ashok.repo.db3;
+
+public interface ProductRepo {
+
+}
