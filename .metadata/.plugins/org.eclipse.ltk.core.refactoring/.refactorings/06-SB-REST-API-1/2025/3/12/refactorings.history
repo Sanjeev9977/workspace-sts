@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Ticket.java&apos; to &apos;06-SB-REST-Consumer-Irctc-ui-4/src/main/java/in.ashok.BilderClass&apos;&#x0D;&#x0A;- Original project: &apos;06-SB-REST-API-1&apos;&#x0D;&#x0A;- Destination element: &apos;06-SB-REST-Consumer-Irctc-ui-4/src/main/java/in.ashok.BilderClass&apos;&#x0D;&#x0A;- Original element: &apos;in.ashok.Entity.Ticket.java&apos;" description="Copy compilation unit" destination="=06-SB-REST-Consumer-Irctc-ui-4/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;in.ashok.BilderClass" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;in.ashok.Entity{Ticket.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1742616289227" units="1" version="1.0"/>
+</session>

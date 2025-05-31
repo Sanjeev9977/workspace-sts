@@ -1,0 +1,27 @@
+package in.ashok.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+import com.fasterxml.jackson.core.JsonProcessingException;
+
+import com.fasterxml.jackson.dataformat.xml.XmlMapper;
+
+@RestController
+public class XmlController {
+	
+	
+	private final XmlMapper xmlMapper;
+
+	public XmlController(XmlMapper xmlMapper) {
+	 
+		this.xmlMapper = xmlMapper;
+	} 
+	
+	
+	public String toxml() throws JosnProcessingException {
+		return null;
+	}
+	
+	
+	
+
+}

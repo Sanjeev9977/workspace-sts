@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\Admin\Documents\workspace-sts\Spring-4\pom.xml"/>
+			<item value="C:\Users\Admin\Documents\workspace-sts\Collection_Injection\src\main\java\in\ashok\been5\TestApp.java"/>
+			<item value="C:\Users\Admin\Documents\workspace-sts\Spring-3\src\main\java\in\ashok\bean2\TestApp.java"/>
+			<item value="C:\Users\Admin\Documents\workspace-sts"/>
+			<item value="C:\Users\Admin\Documents\workspace-sts\hi\src\hi\sanjeev\Test.java"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="All Catalogs"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+		</list>
+		<list key="groupId">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+			<item value="Spring_jdbc"/>
+			<item value="Spring-Jdbc"/>
+			<item value="Collection_Injection"/>
+			<item value="Autowiringxml"/>
+			<item value="Spring-4"/>
+			<item value="Spring-1"/>
+			<item value="spring3"/>
+			<item value="in.sanjeev"/>
+			<item value="in.ashokit"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="Spring_jdbc"/>
+			<item value="Spring-Jdbc"/>
+			<item value="Collection_Injection"/>
+			<item value="Autowiringxml"/>
+			<item value="Spring-4"/>
+			<item value="Spring-3"/>
+			<item value="Spring3"/>
+			<item value="Spring2"/>
+			<item value="Spring1"/>
+			<item value="1-IOC-App"/>
+			<item value="01-IOC-App"/>
+			<item value="03-IOC-App"/>
+			<item value="ashokit"/>
+			<item value="03-ioc-App"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\Admin\Downloads\SB-App"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.dialogs.MavenRepositorySearchDialog">
+		<item key="width" value="480"/>
+		<item key="height" value="531"/>
+		<item key="x" value="585"/>
+		<item key="y" value="114"/>
+	</section>
+</section>

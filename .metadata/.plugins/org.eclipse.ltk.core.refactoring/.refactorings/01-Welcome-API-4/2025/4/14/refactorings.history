@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;in.ashok.rest&apos; to &apos;01-Greet-API-5/src/main/java&apos;&#x0D;&#x0A;- Original project: &apos;01-Welcome-API-4&apos;&#x0D;&#x0A;- Destination element: &apos;01-Greet-API-5/src/main/java&apos;&#x0D;&#x0A;- Original element: &apos;01-Welcome-API-4/src/main/java/in.ashok.rest&apos;" description="Copy package" destination="=01-Greet-API-5/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;in.ashok.rest" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1743703631527" version="1.0"/>
+</session>

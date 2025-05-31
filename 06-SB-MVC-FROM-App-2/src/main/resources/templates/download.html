@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Download File</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Download File</h2>
+        <input type="text" id="name" class="form-control" placeholder="Enter file name">
+        <br>
+        <button onclick="downloadFile()" class="btn btn-primary">Download</button>
+    </div>
+
+    <script>
+        function downloadFile() {
+            var fileName = document.getElementById("name").value;
+            if (!fileName) {
+                alert("Please enter a file name.");
+                return;
+            }
+            window.location.href = "/download?name=" + encodeURIComponent(fileName);
+        }
+    </script>
+</body>
+</html>
+ 

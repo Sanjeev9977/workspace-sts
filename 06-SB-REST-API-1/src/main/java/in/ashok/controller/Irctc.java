@@ -1,0 +1,71 @@
+package in.ashok.controller;
+
+import java.time.LocalDate;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import in.ashok.Entity.TicketBookers;
+import in.ashok.service.IrctcService;
+
+@RestController
+public class Irctc {
+	
+	@Autowired
+	private IrctcService irctcService;
+	
+	@GetMapping(value ="/getTicketBooker"  ,produces ="application/json")
+	public ResponseEntity<TicketBookers> getTicketBooker(){
+		
+		LocalDate bod=LocalDate.of(2000, 3,17);
+		LocalDate doj=LocalDate.of(2025, 3,8);
+		TicketBookers ticketbooker=new TicketBookers("sanjeev",bod,doj,TicketBookers.Gender.MALE,"Tirupati","Gadaga","Haripriya Express");
+		return new ResponseEntity<TicketBookers> (ticketbooker,HttpStatus.OK);
+	}
+	
+	@PostMapping(value = "/bookticket" ,consumes ="application/json" )
+	public ResponseEntity<String> bookticket(@RequestBody TicketBookers ticket){
+		
+		TicketBookers save=  irctcService.save(ticket);
+		if(save !=null) {
+			 
+		return new ResponseEntity<String> ("Ticket booked your Ticket Refernce-Id:- "+ save.getTicketId()+" Thank you for using IRCTC",HttpStatus.CREATED);
+		}
+	else {
+			return new ResponseEntity<String> ("INTERNAL_SERVER_ERROR",HttpStatus.INTERNAL_SERVER_ERROR);
+	
+        }
+	}
+	
+	@GetMapping(value = "/getticket/{TicketId}" ,produces  ="application/json" )
+	public ResponseEntity<TicketBookers> getTicket(@PathVariable("TicketId") String TicketId ){
+		
+		TicketBookers ticket=  irctcService.getTicket(TicketId);
+		if(ticket !=null) {
+			 
+		return ResponseEntity.ok(ticket);
+		}
+	else {
+			return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+	
+        }
+	}
+	
+	@GetMapping(value ="/getAllTicket")
+	public ResponseEntity<List<TicketBookers>> getAllTickets(){
+		
+		List<TicketBookers>  allTickets=irctcService.getAllTicket();
+		
+		return new ResponseEntity<List<TicketBookers>>(allTickets,HttpStatus.OK); 
+		
+	}
+	
+
+}

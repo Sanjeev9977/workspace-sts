@@ -1,0 +1,28 @@
+server:
+  port: 8081  # 👈 Custom port number
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"  # Expose all actuator endpoints
+  endpoint:
+    health:
+      show-details: always  # Shows full health details
+  health:
+    circuitbreakers:
+      enabled: true  # Enable circuit breaker health info
+
+resilience4j:
+  circuitbreaker:
+    configs:
+      default:
+        registerHealthIndicator: true
+        slidingWindowSize: 10
+        minimumNumberOfCalls: 5  # 👈 Wait for at least 5 calls before evaluating failure rate
+        permittedNumberOfCallsInHalfOpenState: 3
+        waitDurationInOpenState: 30s
+        failureRateThreshold: 50  # 👈 If 50% of calls fail, circuit opens
+        eventConsumerBufferSize: 10
+        automaticTransitionFromOpenToHalfOpenEnabled: true  # 👈 Enables auto transition after wait time 
+ 

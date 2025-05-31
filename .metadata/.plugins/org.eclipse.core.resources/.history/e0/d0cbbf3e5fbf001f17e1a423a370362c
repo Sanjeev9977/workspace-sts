@@ -1,0 +1,52 @@
+package in.ashok.service;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import in.ashok.entity.Employee;
+import in.ashok.repo.EmpRepository;
+
+@Service
+public class EmpService {
+	
+	private EmpRepository empRepo;
+
+	public EmpService(EmpRepository empRepo) {
+		this.empRepo = empRepo;
+	}
+	
+	public void saveEmployeeAll() {
+		
+		System.out.println(empRepo.getClass().getName());
+		
+		Employee e=new Employee(8,"nagu",20000);
+		Employee e1=new Employee(9,"shivu",40000);
+		Employee e2=new Employee(10,"siddu",80000);
+		
+		List<Employee> li= Arrays.asList(e1,e2,e);
+		
+		empRepo.saveAll(li);
+		
+		System.out.println("saved all records..........");
+ 
+		 
+		 System.out.println("Record saved.......");
+	}
+	public void saveEmployee() {
+		
+		System.out.println(empRepo.getClass().getName());
+		
+		Employee e=new Employee();
+		 e.setEid(1);
+		 e.setEname("nagu");
+		 e.setSalary(1000000);
+		 empRepo.save(e);
+		 
+		 System.out.println("Record saved.......");
+	}
+	
+
+}

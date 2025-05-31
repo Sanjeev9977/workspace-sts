@@ -1,0 +1,5 @@
+package in.ashok.entity.db3;
+
+public class Product {
+
+}

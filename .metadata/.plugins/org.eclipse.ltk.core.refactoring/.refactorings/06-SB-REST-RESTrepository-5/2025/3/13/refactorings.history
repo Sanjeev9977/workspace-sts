@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;in.ashok.Entity.books&apos; to &apos;Books&apos;&#x0D;&#x0A;- Original project: &apos;06-SB-REST-RESTrepository-5&apos;&#x0D;&#x0A;- Original element: &apos;in.ashok.Entity.books&apos;&#x0D;&#x0A;- Renamed element: &apos;in.ashok.Entity.Books&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;books&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;in.ashok.Entity{books.java[books" matchStrategy="1" name="Books" qualified="false" references="true" similarDeclarations="false" stamp="1742954486889" textual="false" version="1.0"/>
+</session>
